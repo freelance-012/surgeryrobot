@@ -1,0 +1,11 @@
+查一下穿刺机器人的相关文献和专利，整理一下资料，我们一起看看。
+
+1. 关于图像配准问题
+	身体表面金属标记。CT中留下白色痕迹，机器人视觉中金属标记进行匹配，从而实现CT图像与机器人视觉的图像配准。
+	金属标记在CT坐标系下的坐标，和在相机坐标系下的坐标。 进行坐标变换。实现坐标对齐。
+2. 关于实时反馈针穿刺的位置和深度的问题
+
+3. 关于受呼吸运动或人体位移而产生的偏差，而实现实时补偿的问题
+
+
+A Precise Positioning Method for a Puncture Robot Based on a PSO-Optimized BP Neural Network Algorithm (https://www.mdpi.com/2076-3417/7/10/969/htm)
