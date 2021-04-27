@@ -1,0 +1,41 @@
+<html><head><title>全文文本(Fulltext)</title><meta http-equiv='Content-Type' content='text/html; charset=UTF-8'><style>div.fullText table {width: 100%;text-indent: 1px;} 
+ div.fullText table td.header {font-weight: bold;text-align: center;font-family: '宋体';font-size: 16px;line-height:20px;color: #000000;padding: 5px;}div.fullText table td.content {padding: 1px;text-align: left;vertical-align: top;width: 100%;font-family: '宋体';font-size: 14px;line-height:20px;color: #000000;}</style></head><body><?xml version="1.0" encoding="UTF-8"?><div xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:siposeas="java:com.neusoft.sipo.sipopublicsearch.search.app.view.detailUtils.xsltParser.XsltSeasParser" xmlns:str="http://example.com/namespace" class="fullText"><table class="fullText"><tr><td id="claim_title" class="header">权利要求书</td></tr><tr><td class="content" id="claim_1">1.一种导航自动配准法，在获取被操作物体的CT扫描数据之前，将参考工具固定在被操作物体上，利用CT扫描得到包含参考工具图像的被操作物体的图像数据，其特征在于依下述步骤：
+		</td></tr><tr><td class="content" id="claim_2">第一，用电脑图像识别技术，识别出图像数据中的参考工具图像在图像坐标系下的坐标和方位；
+		</td></tr><tr><td class="content" id="claim_3">第二，利用导航仪得到现实空间中参考工具在世界坐标系下的坐标和方位；
+		</td></tr><tr><td class="content" id="claim_4">第三，利用参考工具分别在这两个坐标系中的坐标和方位，求得一个变换矩阵，对世界坐标系下的点应用该变换矩阵，将世界坐标系旋转平移到与图像坐标系重合的位置，反之亦然，使同一点或对象在两个坐标系中的坐标一样。
+		</td></tr><tr><td class="content" id="claim_5">2.根据权利要求1所述的导航自动配准法的用法，用于手术导航，其特征在于：
+		</td></tr><tr><td class="content" id="claim_6">第一，获取病人病灶部位的CT扫描数据之前，先将参考工具固定在病人病灶部位上，然后再利用CT扫描得到包含参考工具图像的病人病灶部位的图像数据；
+		</td></tr><tr><td class="content" id="claim_7">第二，利用电脑图像识别技术识别出图像数据中的参考工具图像在图像坐标系下的坐标和方位；
+		</td></tr><tr><td class="content" id="claim_8">第三，利用导航仪得到现实空间中参考工具在世界坐标系下的坐标和方位；利用参考工具分别在这两个坐标系中的坐标和方位，求得一个变换矩阵，对世界坐标系下的点或对象应用该变换矩阵，将世界坐标系变换旋转平移到与图像坐标系重合的位置，反之亦然，得到同一点或对象在两个坐标系中的坐标一样。
+		</td></tr></table></div><div xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:siposeas="java:com.neusoft.sipo.sipopublicsearch.search.app.view.detailUtils.xsltParser.XsltSeasParser" xmlns:str="http://example.com/namespace" class="fullText"><table><tr><td id="description_title" class="header">说明书</td></tr><tr><td class="content" id="description_invention_title">导航自动配准法</td></tr><tr><td class="content" id="description_1"><p id="p0001" num="0001">技术领域
+	</p></td></tr><tr><td class="content" id="description_2"><p id="p0002" num="0002">本发明导航自动配准法适于使用导航仪的过程中，涉及让导航仪的Reference（参考工具，可以被导航仪识别）所确定的坐标系（下称：世界坐标系）与电脑上显示的通过CT扫描某物体得到的图像的坐标系（下称：图像坐标系）进行自动配准的方法；如在手术导航过程中，让导航仪的Reference所确定的世界坐标系与电脑上显示的通过CT扫描病人病灶部位得到的图像的图像坐标系进行自动配准的方法。
+	</p></td></tr><tr><td class="content" id="description_3"><p id="p0003" num="0003">背景技术
+	</p></td></tr><tr><td class="content" id="description_4"><p id="p0004" num="0004">以手术导航为例，为了让世界坐标系和图像坐标系配准，通常情况下，需要进行手工操作，操作过程为：
+	</p></td></tr><tr><td class="content" id="description_5"><p id="p0005" num="0005">1．将Reference固定在病人身上，将TrackTool（跟踪工具，可以被导航仪识别）固定在手术器械上；
+	</p></td></tr><tr><td class="content" id="description_6"><p id="p0006" num="0006">2．标定手术器械：通常将手术器械的尖端作为手术器械的标定点；
+	</p></td></tr><tr><td class="content" id="description_7"><p id="p0007" num="0007">3．在电脑上显示的通过CT扫描某物体得到的图像上选择N（N&gt;=3）个基准点（下称：Land Mark），并取得这N个Land Mark在图像坐标系下的坐标；
+	</p></td></tr><tr><td class="content" id="description_8"><p id="p0008" num="0008">4．将已经标定好的手术器械的尖端（即标定点）依次放在病人实体上对应的Land Mark上，得到这N个Land Mark在世界坐标系下的坐标；
+	</p></td></tr><tr><td class="content" id="description_9"><p id="p0009" num="0009">5．利用这N个Land Mark在世界坐标系下的坐标和在图像坐标系下的坐标，求得一个变换矩阵，对世界坐标系下的点（或对象）应用该变换矩阵，可以将世界坐标系变换（旋转平移到）与图像坐标系重合的位置（反之亦然）；以后，同一点（或对象）在两个坐标系中的坐标就是一样的了。
+	</p></td></tr><tr><td class="content" id="description_10"><p id="p0010" num="0010">6.求变换矩阵的一种方法是利用第三方库VTK（Visualization Toolkit，视觉化工具函式库，是一个开放源码、跨平台、支援平行处理的图形应用函数库）来完成，具体方法如下：
+	</p></td></tr><tr><td class="content" id="description_11"><p id="p0011" num="0011">（1）将这N个Land Mark在世界坐标系下的坐标存放在类型为vtkPoints的VTK对象中（如命名为sourcePoints）；并将这N个Land Mark在图像坐标系下的坐标也存放在类型为vtkPoints的另一VTK对象中（如命名为targetPoints）；
+	</p></td></tr><tr><td class="content" id="description_12"><p id="p0012" num="0012">（2）创建一个类型为vtkLandmarkTransform的VTK对象（如命名为landmarkTransform），调用这个对象landmarkTransform的方法SetSourceLandmarks将上面所述的这N个Land Mark在世界坐标系下的坐标sourcePoints传入，并调用这个类的方法SetTargetLandmarks将这N个Land Mark在图像坐标系下的坐标targetPoints传入，然后调用这个对象landmarkTransform的方法GetMatrix就可以得到我们想要的变换矩阵（如命名为matrix，该变换矩阵是一个类型为vtkMatrix4x4的VTK对象）；
+	</p></td></tr><tr><td class="content" id="description_13"><p id="p0013" num="0013">（3）我们的导航仪对应于一个类型为vtkTracker的VTK的对象（如命名为tracker）,以上面获得的变换矩阵matrix为参数，调用导航仪对象tracker的方法SetWorldCalibrationMatrix，就可以完成我们想要完成的转换；
+	</p></td></tr><tr><td class="content" id="description_14"><p id="p0014" num="0014">当前技术的不足：
+	</p></td></tr><tr><td class="content" id="description_15"><p id="p0015" num="0015">1）  为了让世界坐标系和图像坐标系配准，需要进行复杂的手工操作；
+	</p></td></tr><tr><td class="content" id="description_16"><p id="p0016" num="0016">2）  进行了手工操作后，虽然可以达到配准的效果，但是由于是人工操作，所以带来了很大的不准确的因素，导致配准不是很精确；
+	</p></td></tr><tr><td class="content" id="description_17"><p id="p0017" num="0017">理论情况下，选择3个Land Mark进行配准就可以了，但是，在实际操作过程中，为了使手工配准尽量准确，通常情况下，我们会选择尽量多的Land Mark进行配准，如5个或5个以上，这就又增加了配准的复杂性。
+	</p></td></tr><tr><td class="content" id="description_18"><p id="p0018" num="0018">发明内容
+	</p></td></tr><tr><td class="content" id="description_19"><p id="p0019" num="0019">本发明目的在于：提供一种导航自动配准法，让世界坐标系和图像坐标系进行自动配准，而且会避免人工操作所带来的不准确性。
+	</p></td></tr><tr><td class="content" id="description_20"><p id="p0020" num="0020">本发明目的通过下述技术方案实现：一种导航自动配准法，在获取被操作物体的CT扫描数据之前，将参考工具固定在被操作物体上，利用CT扫描得到包含参考工具图像的被操作物体的图像数据，其步骤为：
+	</p></td></tr><tr><td class="content" id="description_21"><p id="p0021" num="0021">第一，用电脑图像识别技术，识别出图像数据中的参考工具图像在图像坐标系下的坐标和方位；
+	</p></td></tr><tr><td class="content" id="description_22"><p id="p0022" num="0022">第二，利用导航仪得到现实空间中参考工具在世界坐标系下的坐标和方位；
+	</p></td></tr><tr><td class="content" id="description_23"><p id="p0023" num="0023">第三，利用参考工具分别在这两个坐标系中的坐标和方位，求得一个变换矩阵，对世界坐标系下的点或对象应用该变换矩阵，将世界坐标系旋转平移到与图像坐标系重合的位置，反之亦然，使同一点或对象在两个坐标系中的坐标一样，实现导航自动配准。
+	</p></td></tr><tr><td class="content" id="description_24"><p id="p0024" num="0024">本发明的优越性在于：用导航仪的过程中，取消了现有技术中为了让世界坐标系和图像坐标系配准而需要进行的复杂的手工操作的过程，并且避免了手工操作带来的人为误差，实现了让世界坐标系和图像坐标系进行自动配准。
+	</p></td></tr><tr><td class="content" id="description_25"><p id="p0025" num="0025">具体实施方式
+	</p></td></tr><tr><td class="content" id="description_26"><p id="p0026" num="0026">以手术导航为例，操作过程：
+	</p></td></tr><tr><td class="content" id="description_27"><p id="p0027" num="0027">在使用导航仪的过程中，依序按下述方法让世界坐标系和图像坐标系进行自动配准；
+	</p></td></tr><tr><td class="content" id="description_28"><p id="p0028" num="0028">第一，在获取被操作物体的CT扫描数据之前，先将Reference固定在病人病灶部位上，然后再利用CT扫描得到包含Reference图像的病人病灶部位的图像数据；
+	</p></td></tr><tr><td class="content" id="description_29"><p id="p0029" num="0029">第二，利用电脑图像识别技术，识别出图像数据中的Reference图像在图像坐标系下的坐标和方位；
+	</p></td></tr><tr><td class="content" id="description_30"><p id="p0030" num="0030">第三，接着利用导航仪得到现实空间中Reference在世界坐标系下的坐标和方位；
+	</p></td></tr><tr><td class="content" id="description_31"><p id="p0031" num="0031">第四，利用Reference分别在这两个坐标系中的坐标和方位，求得一个变换矩阵，对世界坐标系下的点（或对象）应用该变换矩阵，可以将世界坐标系变换旋转平移到与图像坐标系重合的位置，反之亦然，使同一点（或对象）在两个坐标系中的坐标一样。
+	</p></td></tr></table></div></body></html>

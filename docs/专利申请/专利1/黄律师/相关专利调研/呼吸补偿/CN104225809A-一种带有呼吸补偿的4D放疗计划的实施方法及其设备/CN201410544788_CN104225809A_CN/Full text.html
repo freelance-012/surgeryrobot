@@ -1,0 +1,297 @@
+<html><head><title>全文文本(Fulltext)</title><meta http-equiv='Content-Type' content='text/html; charset=UTF-8'><style>div.fullText table {width: 100%;text-indent: 1px;} 
+ div.fullText table td.header {font-weight: bold;text-align: center;font-family: '宋体';font-size: 16px;line-height:20px;color: #000000;padding: 5px;}div.fullText table td.content {padding: 1px;text-align: left;vertical-align: top;width: 100%;font-family: '宋体';font-size: 14px;line-height:20px;color: #000000;}</style></head><body><?xml version="1.0" encoding="UTF-8"?><div xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:siposeas="java:com.neusoft.sipo.sipopublicsearch.search.app.view.detailUtils.xsltParser.XsltSeasParser" xmlns:str="http://example.com/namespace" class="fullText"><table class="fullText"><tr><td id="claim_title" class="header">权利要求书</td></tr><tr><td class="content" id="claim_1">1.一种带有呼吸补偿的4D放疗计划的实施方法，其特征在于包括如下步
+			<br/>骤：
+			<br/></td></tr><tr><td class="content" id="claim_2">步骤1：输入患者不同呼吸时相的4D医学图像，并勾画出各呼吸时相的靶
+			<br/>区和危及器官的组织轮廓，执行步骤2；
+			<br/></td></tr><tr><td class="content" id="claim_3">步骤2：设计4D放疗计划；所述4D放疗计划包括对应各呼吸时相的射野参
+			<br/>数和计划剂量分布、以及各时相合成计划剂量分布，执行步骤3；
+			<br/></td></tr><tr><td class="content" id="claim_4">步骤3：输出本单分次4D放疗计划，执行步骤4；
+			<br/></td></tr><tr><td class="content" id="claim_5">步骤4：监测患者呼吸时相并预测患者呼吸时相变化，执行步骤5；
+			<br/></td></tr><tr><td class="content" id="claim_6">步骤5：根据所预测的呼吸时相变化从输出的本单分次4D放疗计划中调用
+			<br/>对应呼吸时相的射野参数，执行步骤6；
+			<br/></td></tr><tr><td class="content" id="claim_7">步骤6：根据所调用的射野参数控制医疗X射线机形成相应射野，以及完成
+			<br/>相应的出束照射动作，执行步骤7；
+			<br/></td></tr><tr><td class="content" id="claim_8">步骤7：实时存储医疗X射线机各动作数据，执行步骤8；
+			<br/></td></tr><tr><td class="content" id="claim_9">步骤8：判断本单分次4D放疗是否结束，是则执行步骤9，否则返回步骤4；
+			<br/></td></tr><tr><td class="content" id="claim_10">步骤9：根据所监测的患者呼吸时相变化形成患者本单分次4D放疗中的呼
+			<br/>吸曲线图，执行步骤10；
+			<br/></td></tr><tr><td class="content" id="claim_11">步骤10：利用医疗X射线机各动作数据和患者本单分次4D放疗中的呼吸曲
+			<br/>线图计算本单分次放疗中患者所接受的实际剂量分布，执行步骤11；
+			<br/></td></tr><tr><td class="content" id="claim_12">步骤11：将计算出的实际剂量分布与本单分次4D放疗计划的计划剂量分布
+			<br/>进行对比，根据对比结果确定是否需要优化后续分次4D放疗计划。
+			<br/></td></tr><tr><td class="content" id="claim_13">2.根据权利要求1所述的一种带有呼吸补偿的4D放疗计划的实施方法，
+			<br/>其特征在于所述步骤2包括如下步骤：
+			<br/></td></tr><tr><td class="content" id="claim_14">ⅰ、设计所述靶区和危及器官的约束条件；
+			<br/></td></tr><tr><td class="content" id="claim_15">ⅱ、利用逆向计划优化方法形成4D放疗计划；
+			<br/></td></tr><tr><td class="content" id="claim_16">ⅲ、判断4D放疗计划中的总计划剂量分布是否符合临床要求，若不满足，
+			<br/>则修改逆向计划优化方法的优化条件重新形成4D放疗计划；
+			<br/></td></tr><tr><td class="content" id="claim_17">ⅳ、反复执行步骤ⅲ直至4D放疗计划中的总计划剂量分布符合临床要求。
+			<br/></td></tr><tr><td class="content" id="claim_18">3.根据权利要求1所述的一种带有呼吸补偿的4D放疗计划的实施方法，
+			<br/>其特征在于在患者被实施4D放疗之前还具有如下步骤：
+			<br/></td></tr><tr><td class="content" id="claim_19">①对患者进行呼吸训练；
+			<br/></td></tr><tr><td class="content" id="claim_20">②确定患者的呼吸运动处于平稳状态；
+			<br/></td></tr><tr><td class="content" id="claim_21">③监测患者呼吸时相；
+			<br/></td></tr><tr><td class="content" id="claim_22">④根据所监测的呼吸时相建立呼吸预测数据库。
+			<br/></td></tr><tr><td class="content" id="claim_23">4.根据权利要求3所述的一种带有呼吸补偿的4D放疗计划的实施方法，
+			<br/>其特征在于所述步骤4具体为：根据所监测的患者当前呼吸时相，结合所建立
+			<br/>的呼吸预测数据库确定患者下一呼吸时相。
+			<br/></td></tr><tr><td class="content" id="claim_24">5.根据权利要求1所述的一种带有呼吸补偿的4D放疗计划的实施方法，
+			<br/>其特征在于所述医疗X射线机包括根据射野参数运动形成相应射野的自动多叶
+			<br/>准直器和根据射野参数完成相应出束照射动作的加速器。
+			<br/></td></tr><tr><td class="content" id="claim_25">6.一种带有呼吸补偿的4D放疗计划的实施设备，其特征在于包括：
+			<br/></td></tr><tr><td class="content" id="claim_26">输入模块，用于输入患者不同呼吸时相的4D医学图像；
+			<br/></td></tr><tr><td class="content" id="claim_27">连接输入模块，用于勾画出各呼吸时相的靶区和危及器官的组织轮廓的勾
+			<br/>画模块；
+			<br/></td></tr><tr><td class="content" id="claim_28">连接勾画模块，用于设计4D放疗计划的放疗计划模块；所述4D放疗计划
+			<br/>包括对应各呼吸时相的射野参数和计划剂量分布、以及各时相合成计划剂量分
+			<br/>布；
+			<br/></td></tr><tr><td class="content" id="claim_29">连接放疗计划模块，用于输出本单分次4D放疗计划的输出模块；
+			<br/></td></tr><tr><td class="content" id="claim_30">用于监测患者呼吸时相的呼吸监测装置；
+			<br/></td></tr><tr><td class="content" id="claim_31">连接呼吸监测装置，用于预测患者呼吸时相变化的呼吸时相预测模块；
+			<br/></td></tr><tr><td class="content" id="claim_32">连接呼吸时相预测模块和输出模块，用于根据所预测的呼吸时相变化从输
+			<br/>出的本单分次4D放疗计划中调用对应呼吸时相的射野参数的调用模块；
+			<br/></td></tr><tr><td class="content" id="claim_33">连接调用模块，用于根据所调用的射野参数控制医疗X射线机形成相应射
+			<br/>野，以及完成相应的出束照射动作的控制模块；
+			<br/></td></tr><tr><td class="content" id="claim_34">医疗X射线机；
+			<br/></td></tr><tr><td class="content" id="claim_35">连接医疗X射线机，用于存储医疗X射线机各动作数据的存储模块；
+			<br/></td></tr><tr><td class="content" id="claim_36">用于判断本单分次4D放疗是否结束的判断模块；
+			<br/></td></tr><tr><td class="content" id="claim_37">连接判断模块，用于当本单分次放射治疗结束后根据所监测的患者呼吸时
+			<br/>相变化形成患者本单分次4D放疗中的呼吸曲线图的呼吸曲线生成模块；
+			<br/></td></tr><tr><td class="content" id="claim_38">连接存储模块和呼吸曲线生成模块，用于利用医疗X射线机各动作数据和
+			<br/>患者本单分次4D放疗中的呼吸曲线图计算本单分次放疗中患者所接受的实际剂
+			<br/>				量分布的剂量验证模块；
+			<br/></td></tr><tr><td class="content" id="claim_39">连接剂量验证模块，用于将计算出的实际剂量分布与本单分次4D放疗计划
+			<br/>的计划剂量分布进行对比，根据对比结果确定是否需要优化后续分次4D放疗计
+			<br/>划的剂量对比模块。
+			<br/></td></tr><tr><td class="content" id="claim_40">7.根据权利要求6所述的一种带有呼吸补偿的4D放疗计划的实施设备，
+			<br/>其特征在于还包括：
+			<br/></td></tr><tr><td class="content" id="claim_41">根据所监测的呼吸时相建立的呼吸预测数据库；所述呼吸时相预测模块根
+			<br/>据所监测的患者当前呼吸时相，结合所建立的呼吸预测数据库确定患者下一呼
+			<br/>吸时相。
+			<br/></td></tr><tr><td class="content" id="claim_42">8.根据权利要求6所述的一种带有呼吸补偿的4D放疗计划的实施设备，
+			<br/>其特征在于：
+			<br/></td></tr><tr><td class="content" id="claim_43">所述输入模块、勾画模块、放疗计划模块、输出模块、剂量验证模块和剂
+			<br/>量对比模块集成于4D放疗计划系统；
+			<br/></td></tr><tr><td class="content" id="claim_44">所述呼吸时相预测模块、调用模块、控制模块、判断模块、存储模块和呼
+			<br/>吸曲线生成模块集成于4D放疗控制系统。
+			<br/></td></tr></table></div><div xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:siposeas="java:com.neusoft.sipo.sipopublicsearch.search.app.view.detailUtils.xsltParser.XsltSeasParser" xmlns:str="http://example.com/namespace" class="fullText"><table><tr><td id="description_title" class="header">说明书</td></tr><tr><td class="content" id="description_invention_title">一种带有呼吸补偿的4D放疗计划的实施方法及其设备</td></tr><tr><td class="content" id="description_1"><p id="p0001" num="0001">技术领域
+		<br/></p></td></tr><tr><td class="content" id="description_2"><p id="p0002" num="0002">本发明涉及一种带有呼吸补偿的4D放疗计划的实施方法及其设备。
+		<br/></p></td></tr><tr><td class="content" id="description_3"><p id="p0003" num="0003">背景技术
+		<br/></p></td></tr><tr><td class="content" id="description_4"><p id="p0004" num="0004">放射治疗是治疗恶性肿瘤的主要技术手段之一,其目标是最大限度地将放
+		<br/>射线集中照射到肿瘤(靶区),而周围的正常组织及器官应受到最小的剂量。影像
+		<br/>引导放射治疗(IGRT)技术是在三维放射治疗技术的基础上加入了时间因素的
+		<br/>概念而成为四维放射治疗(4D放疗)；一般将四维放射治疗(4D放疗)定义为
+		<br/>在影像定位、放疗计划设计和治疗实施阶段均明确考虑解剖结构随时间变化的
+		<br/>放疗技术，其实施过程包括四维影像定位、四维放疗计划设计和四维治疗实施
+		<br/>三个部分组成；IGRT技术充分考虑了解剖组织在治疗过程中的运动和分次治疗
+		<br/>间的位移误差，在患者进行治疗前、治疗中利用各种先进的影像设备对肿瘤及
+		<br/>正常器官进行实时监控，并利用图像和/或信号引导本单分次治疗和/或后续分
+		<br/>次治疗，引导的方式可以是校正患者摆位、调整治疗计划或引导射线束照射；
+		<br/>由于影像引导放射治疗(IGRT)技术和四维放射治疗(4D放疗)技术能够在不
+		<br/>增加甚至是减少正常组织放射损伤的情况下，显著提高传统放射治疗的精确性，
+		<br/>因此在近年来得到了广泛研究和推广。同时，造成肿瘤位置和重要器官在治疗
+		<br/>过程中的移动一般是由于患者的呼吸，如肿瘤在呼吸循环内的位移可达几个厘
+		<br/>米，现有技术中为了避免这一技术问题，一般4D放疗计划设计是针对4D图像
+		<br/>中的某一时相进行，治疗实施时让患者在放疗计划设计时所用的时相进行憋气，
+		<br/>这种方式只能适用于呼吸自主控制状态良好且愿意配合的患者，适用范围相对
+		<br/>较窄，且由于患者憋气时间有限，每次治疗实施时均会严重延长患者的治疗时
+		<br/>间，缩短治疗效率，对患者的耐受性要求较高。
+		<br/></p></td></tr><tr><td class="content" id="description_5"><p id="p0005" num="0005">发明内容
+		<br/></p></td></tr><tr><td class="content" id="description_6"><p id="p0006" num="0006">本发明针对以上问题的提出，而研制一种带有呼吸补偿的4D放疗计划的实
+		<br/>施方法及其设备。
+		<br/></p></td></tr><tr><td class="content" id="description_7"><p id="p0007" num="0007">本发明的技术手段如下：
+		<br/></p></td></tr><tr><td class="content" id="description_8"><p id="p0008" num="0008">一种带有呼吸补偿的4D放疗计划的实施方法，包括如下步骤：
+		<br/></p></td></tr><tr><td class="content" id="description_9"><p id="p0009" num="0009">步骤1：输入患者不同呼吸时相的4D医学图像，并勾画出各呼吸时相的靶
+		<br/>区和危及器官的组织轮廓，执行步骤2；
+		<br/></p></td></tr><tr><td class="content" id="description_10"><p id="p0010" num="0010">步骤2：设计4D放疗计划；所述4D放疗计划包括对应各呼吸时相的射野参
+		<br/>数和计划剂量分布、以及各时相合成计划剂量分布，执行步骤3；
+		<br/></p></td></tr><tr><td class="content" id="description_11"><p id="p0011" num="0011">步骤3：输出本单分次4D放疗计划，执行步骤4；
+		<br/></p></td></tr><tr><td class="content" id="description_12"><p id="p0012" num="0012">步骤4：监测患者呼吸时相并预测患者呼吸时相变化，执行步骤5；
+		<br/></p></td></tr><tr><td class="content" id="description_13"><p id="p0013" num="0013">步骤5：根据所预测的呼吸时相变化从输出的本单分次4D放疗计划中调用
+		<br/>对应呼吸时相的射野参数，执行步骤6；
+		<br/></p></td></tr><tr><td class="content" id="description_14"><p id="p0014" num="0014">步骤6：根据所调用的射野参数控制医疗X射线机形成相应射野，以及完成
+		<br/>相应的出束照射动作，执行步骤7；
+		<br/></p></td></tr><tr><td class="content" id="description_15"><p id="p0015" num="0015">步骤7：实时存储医疗X射线机各动作数据，执行步骤8；
+		<br/></p></td></tr><tr><td class="content" id="description_16"><p id="p0016" num="0016">步骤8：判断本单分次4D放疗是否结束，是则执行步骤9，否则返回步骤4；
+		<br/></p></td></tr><tr><td class="content" id="description_17"><p id="p0017" num="0017">步骤9：根据所监测的患者呼吸时相变化形成患者本单分次4D放疗中的呼
+		<br/>吸曲线图，执行步骤10；
+		<br/></p></td></tr><tr><td class="content" id="description_18"><p id="p0018" num="0018">步骤10：利用医疗X射线机各动作数据和患者本单分次4D放疗中的呼吸曲
+		<br/>线图计算本单分次放疗中患者所接受的实际剂量分布，执行步骤11；
+		<br/></p></td></tr><tr><td class="content" id="description_19"><p id="p0019" num="0019">步骤11：将计算出的实际剂量分布与本单分次4D放疗计划的计划剂量分布
+		<br/>进行对比，根据对比结果确定是否需要优化后续分次4D放疗计划；
+		<br/></p></td></tr><tr><td class="content" id="description_20"><p id="p0020" num="0020">进一步地，所述步骤2包括如下步骤：
+		<br/></p></td></tr><tr><td class="content" id="description_21"><p id="p0021" num="0021">ⅰ、设计所述靶区和危及器官的约束条件；
+		<br/></p></td></tr><tr><td class="content" id="description_22"><p id="p0022" num="0022">ⅱ、利用逆向计划优化方法形成4D放疗计划；
+		<br/></p></td></tr><tr><td class="content" id="description_23"><p id="p0023" num="0023">ⅲ、判断4D放疗计划中的总计划剂量分布是否符合临床要求，若不满足，
+		<br/>则修改逆向计划优化方法的优化条件重新形成4D放疗计划；
+		<br/></p></td></tr><tr><td class="content" id="description_24"><p id="p0024" num="0024">ⅳ、反复执行步骤ⅲ直至4D放疗计划中的总计划剂量分布符合临床要求；
+		<br/></p></td></tr><tr><td class="content" id="description_25"><p id="p0025" num="0025">进一步地，在患者被实施4D放疗之前还具有如下步骤：
+		<br/></p></td></tr><tr><td class="content" id="description_26"><p id="p0026" num="0026">①对患者进行呼吸训练；
+		<br/></p></td></tr><tr><td class="content" id="description_27"><p id="p0027" num="0027">②确定患者的呼吸运动处于平稳状态；
+		<br/></p></td></tr><tr><td class="content" id="description_28"><p id="p0028" num="0028">③监测患者呼吸时相；
+		<br/></p></td></tr><tr><td class="content" id="description_29"><p id="p0029" num="0029">④根据所监测的呼吸时相建立呼吸预测数据库；
+		<br/></p></td></tr><tr><td class="content" id="description_30"><p id="p0030" num="0030">进一步地，所述步骤4具体为：根据所监测的患者当前呼吸时相，结合所
+		<br/>建立的呼吸预测数据库确定患者下一呼吸时相；
+		<br/></p></td></tr><tr><td class="content" id="description_31"><p id="p0031" num="0031">进一步地，所述医疗X射线机包括根据射野参数运动形成相应射野的自动
+		<br/>多叶准直器和根据射野参数完成相应出束照射动作的加速器。
+		<br/></p></td></tr><tr><td class="content" id="description_32"><p id="p0032" num="0032">一种带有呼吸补偿的4D放疗计划的实施设备，包括：
+		<br/></p></td></tr><tr><td class="content" id="description_33"><p id="p0033" num="0033">输入模块，用于输入患者不同呼吸时相的4D医学图像；
+		<br/></p></td></tr><tr><td class="content" id="description_34"><p id="p0034" num="0034">连接输入模块，用于勾画出各呼吸时相的靶区和危及器官的组织轮廓的勾
+		<br/>画模块；
+		<br/></p></td></tr><tr><td class="content" id="description_35"><p id="p0035" num="0035">连接勾画模块，用于设计4D放疗计划的放疗计划模块；所述4D放疗计划
+		<br/>包括对应各呼吸时相的射野参数和计划剂量分布、以及各时相合成计划剂量分
+		<br/>布；
+		<br/></p></td></tr><tr><td class="content" id="description_36"><p id="p0036" num="0036">连接放疗计划模块，用于输出本单分次4D放疗计划的输出模块；
+		<br/></p></td></tr><tr><td class="content" id="description_37"><p id="p0037" num="0037">用于监测患者呼吸时相的呼吸监测装置；
+		<br/></p></td></tr><tr><td class="content" id="description_38"><p id="p0038" num="0038">连接呼吸监测装置，用于预测患者呼吸时相变化的呼吸时相预测模块；
+		<br/></p></td></tr><tr><td class="content" id="description_39"><p id="p0039" num="0039">连接呼吸时相预测模块和输出模块，用于根据所预测的呼吸时相变化从输
+		<br/>出的本单分次4D放疗计划中调用对应呼吸时相的射野参数的调用模块；
+		<br/></p></td></tr><tr><td class="content" id="description_40"><p id="p0040" num="0040">连接调用模块，用于根据所调用的射野参数控制医疗X射线机形成相应射
+		<br/>野，以及完成相应的出束照射动作的控制模块；
+		<br/></p></td></tr><tr><td class="content" id="description_41"><p id="p0041" num="0041">医疗X射线机；
+		<br/></p></td></tr><tr><td class="content" id="description_42"><p id="p0042" num="0042">连接医疗X射线机，用于存储医疗X射线机各动作数据的存储模块；
+		<br/></p></td></tr><tr><td class="content" id="description_43"><p id="p0043" num="0043">用于判断本单分次4D放疗是否结束的判断模块；
+		<br/></p></td></tr><tr><td class="content" id="description_44"><p id="p0044" num="0044">连接判断模块，用于当本单分次放射治疗结束后根据所监测的患者呼吸时
+		<br/>相变化形成患者本单分次4D放疗中的呼吸曲线图的呼吸曲线生成模块；
+		<br/></p></td></tr><tr><td class="content" id="description_45"><p id="p0045" num="0045">连接存储模块和呼吸曲线生成模块，用于利用医疗X射线机各动作数据和
+		<br/>患者本单分次4D放疗中的呼吸曲线图计算本单分次放疗中患者所接受的实际剂
+		<br/>量分布的剂量验证模块；
+		<br/></p></td></tr><tr><td class="content" id="description_46"><p id="p0046" num="0046">连接剂量验证模块，用于将计算出的实际剂量分布与本单分次4D放疗计划
+		<br/>的计划剂量分布进行对比，根据对比结果确定是否需要优化后续分次4D放疗计
+		<br/>划的剂量对比模块；
+		<br/></p></td></tr><tr><td class="content" id="description_47"><p id="p0047" num="0047">另外，还包括：
+		<br/></p></td></tr><tr><td class="content" id="description_48"><p id="p0048" num="0048">根据所监测的呼吸时相建立的呼吸预测数据库；所述呼吸时相预测模块根
+		<br/>据所监测的患者当前呼吸时相，结合所建立的呼吸预测数据库确定患者下一呼
+		<br/>吸时相；
+		<br/></p></td></tr><tr><td class="content" id="description_49"><p id="p0049" num="0049">进一步地：
+		<br/></p></td></tr><tr><td class="content" id="description_50"><p id="p0050" num="0050">所述输入模块、勾画模块、放疗计划模块、输出模块、剂量验证模块和剂
+		<br/>量对比模块集成于4D放疗计划系统；
+		<br/></p></td></tr><tr><td class="content" id="description_51"><p id="p0051" num="0051">所述呼吸时相预测模块、调用模块、控制模块、判断模块、存储模块和呼
+		<br/>吸曲线生成模块集成于4D放疗控制系统。
+		<br/></p></td></tr><tr><td class="content" id="description_52"><p id="p0052" num="0052">由于采用了上述技术方案，本发明提供的一种带有呼吸补偿的4D放疗计划
+		<br/>的实施方法及其设备，解决了让患者在放疗计划设计时所用的时相进行憋气的
+		<br/>现有方式所导致的延长治疗时间以及适用范围窄的问题，提高了治疗效率，在
+		<br/>治疗实施过程中充分考虑了患者呼吸运动对肿瘤位置和危及器官的位移影响，
+		<br/>4D放疗计划能够随时跟随患者呼吸运动而作适应性调整，达到精确四维放疗的
+		<br/>目标，有效实现了最大限度地将放射线集中照射到肿瘤，同时周围的正常组织
+		<br/>及器官受到最小的剂量。
+		<br/></p></td></tr><tr><td class="content" id="description_53"><p id="p0053" num="0053">附图说明
+		<br/></p></td></tr><tr><td class="content" id="description_54"><p id="p0054" num="0054">图1是本发明所述实施方法的流程图；
+		<br/></p></td></tr><tr><td class="content" id="description_55"><p id="p0055" num="0055">图2是本发明所述实施设备的结构示意图；
+		<br/></p></td></tr><tr><td class="content" id="description_56"><p id="p0056" num="0056">图3是本发明所述实施设备的结构框图。
+		<br/></p></td></tr><tr><td class="content" id="description_57"><p id="p0057" num="0057">图中：1、加速器，2、自动多叶准直器，3、呼吸监测装置，4、4D放疗控
+		<br/>制系统，5、4D放疗计划系统，6、患者。
+		<br/></p></td></tr><tr><td class="content" id="description_58"><p id="p0058" num="0058">具体实施方式
+		<br/></p></td></tr><tr><td class="content" id="description_59"><p id="p0059" num="0059">如图1所示的一种带有呼吸补偿的4D放疗计划的实施方法，包括如下步骤：
+		<br/></p></td></tr><tr><td class="content" id="description_60"><p id="p0060" num="0060">步骤1：输入患者不同呼吸时相的4D医学图像，并勾画出各呼吸时相的靶
+		<br/>区和危及器官的组织轮廓，执行步骤2；
+		<br/></p></td></tr><tr><td class="content" id="description_61"><p id="p0061" num="0061">步骤2：设计4D放疗计划；所述4D放疗计划包括对应各呼吸时相的射野参
+		<br/>数和计划剂量分布、以及各时相合成计划剂量分布，执行步骤3；
+		<br/></p></td></tr><tr><td class="content" id="description_62"><p id="p0062" num="0062">步骤3：输出本单分次4D放疗计划，执行步骤4；
+		<br/></p></td></tr><tr><td class="content" id="description_63"><p id="p0063" num="0063">步骤4：监测患者呼吸时相并预测患者呼吸时相变化，执行步骤5；
+		<br/></p></td></tr><tr><td class="content" id="description_64"><p id="p0064" num="0064">步骤5：根据所预测的呼吸时相变化从输出的本单分次4D放疗计划中调用
+		<br/>对应呼吸时相的射野参数，执行步骤6；
+		<br/></p></td></tr><tr><td class="content" id="description_65"><p id="p0065" num="0065">步骤6：根据所调用的射野参数控制医疗X射线机形成相应射野，以及完成
+		<br/>相应的出束照射动作，执行步骤7；
+		<br/></p></td></tr><tr><td class="content" id="description_66"><p id="p0066" num="0066">步骤7：实时存储医疗X射线机各动作数据，执行步骤8；
+		<br/></p></td></tr><tr><td class="content" id="description_67"><p id="p0067" num="0067">步骤8：判断本单分次4D放疗是否结束，是则执行步骤9，否则返回步骤4；
+		<br/></p></td></tr><tr><td class="content" id="description_68"><p id="p0068" num="0068">步骤9：根据所监测的患者呼吸时相变化形成患者本单分次4D放疗中的呼
+		<br/>吸曲线图，执行步骤10；
+		<br/></p></td></tr><tr><td class="content" id="description_69"><p id="p0069" num="0069">步骤10：利用医疗X射线机各动作数据和患者本单分次4D放疗中的呼吸曲
+		<br/>线图计算本单分次放疗中患者所接受的实际剂量分布，执行步骤11；
+		<br/></p></td></tr><tr><td class="content" id="description_70"><p id="p0070" num="0070">步骤11：将计算出的实际剂量分布与本单分次4D放疗计划的计划剂量分布
+		<br/>进行对比，根据对比结果确定是否需要优化后续分次4D放疗计划；
+		<br/></p></td></tr><tr><td class="content" id="description_71"><p id="p0071" num="0071">进一步地，所述步骤2包括如下步骤：
+		<br/></p></td></tr><tr><td class="content" id="description_72"><p id="p0072" num="0072">ⅰ、设计所述靶区和危及器官的约束条件；所述约束条件包括靶区剂量目
+		<br/>标、危及器官限量要求等参数；
+		<br/></p></td></tr><tr><td class="content" id="description_73"><p id="p0073" num="0073">ⅱ、利用逆向计划优化方法形成4D放疗计划；
+		<br/></p></td></tr><tr><td class="content" id="description_74"><p id="p0074" num="0074">ⅲ、判断4D放疗计划中的总计划剂量分布是否符合临床要求，若不满足，
+		<br/>则修改逆向计划优化方法的优化条件重新形成4D放疗计划；
+		<br/></p></td></tr><tr><td class="content" id="description_75"><p id="p0075" num="0075">ⅳ、反复执行步骤ⅲ直至4D放疗计划中的总计划剂量分布符合临床要求；
+		<br/></p></td></tr><tr><td class="content" id="description_76"><p id="p0076" num="0076">当需要优化后续分次4D放疗计划时，采用两种方式实现后续分次4D放疗
+		<br/>计划的优化：Ⅰ、不重新扫描4D图像，将4D放疗计划中的总计划剂量分布扣
+		<br/>除本单分次放疗中患者所接受的实际剂量分布后，同时分次数减一作为当前分
+		<br/>次数，执行步骤2；Ⅱ、重新扫描4D图像，执行步骤1，导入已完成放疗分次
+		<br/>的实际剂量分布，分次数减去已完成放疗的分次数作为当前分次数，执行步骤2；
+		<br/></p></td></tr><tr><td class="content" id="description_77"><p id="p0077" num="0077">进一步地，在患者被实施4D放疗之前还具有如下步骤：
+		<br/></p></td></tr><tr><td class="content" id="description_78"><p id="p0078" num="0078">①对患者进行呼吸训练；
+		<br/></p></td></tr><tr><td class="content" id="description_79"><p id="p0079" num="0079">②确定患者的呼吸运动处于平稳状态；
+		<br/></p></td></tr><tr><td class="content" id="description_80"><p id="p0080" num="0080">③监测患者呼吸时相；
+		<br/></p></td></tr><tr><td class="content" id="description_81"><p id="p0081" num="0081">④根据所监测的呼吸时相建立呼吸预测数据库；
+		<br/></p></td></tr><tr><td class="content" id="description_82"><p id="p0082" num="0082">进一步地，所述步骤4具体为：根据所监测的患者当前呼吸时相，结合所
+		<br/>建立的呼吸预测数据库确定患者下一呼吸时相；
+		<br/></p></td></tr><tr><td class="content" id="description_83"><p id="p0083" num="0083">进一步地，所述医疗X射线机包括根据射野参数运动形成相应射野的自动
+		<br/>多叶准直器和根据射野参数完成相应出束照射动作的加速器。
+		<br/></p></td></tr><tr><td class="content" id="description_84"><p id="p0084" num="0084">如图2和图3所示的一种带有呼吸补偿的4D放疗计划的实施设备，包括：
+		<br/>输入模块，用于输入患者6不同呼吸时相的4D医学图像；连接输入模块，用于
+		<br/>勾画出各呼吸时相的靶区和危及器官的组织轮廓的勾画模块；连接勾画模块，
+		<br/>				用于设计4D放疗计划的放疗计划模块；所述4D放疗计划包括对应各呼吸时相
+		<br/>的射野参数和计划剂量分布、以及各时相合成计划剂量分布；连接放疗计划模
+		<br/>块，用于输出本单分次4D放疗计划的输出模块；用于监测患者6呼吸时相的呼
+		<br/>吸监测装置3；连接呼吸监测装置3，用于预测患者6呼吸时相变化的呼吸时相
+		<br/>预测模块；连接呼吸时相预测模块和输出模块，用于根据所预测的呼吸时相变
+		<br/>化从输出的本单分次4D放疗计划中调用对应呼吸时相的射野参数的调用模块；
+		<br/>连接调用模块，用于根据所调用的射野参数控制医疗X射线机形成相应射野，
+		<br/>以及完成相应的出束照射动作的控制模块；医疗X射线机；连接医疗X射线机，
+		<br/>用于存储医疗X射线机各动作数据的存储模块；用于判断本单分次4D放疗是否
+		<br/>结束的判断模块；连接判断模块，用于当本单分次放射治疗结束后根据所监测
+		<br/>的患者6呼吸时相变化形成患者6本单分次4D放疗中的呼吸曲线图的呼吸曲线
+		<br/>生成模块；连接存储模块和呼吸曲线生成模块，用于利用医疗X射线机各动作
+		<br/>数据和患者6本单分次4D放疗中的呼吸曲线图计算本单分次放疗中患者6所接
+		<br/>受的实际剂量分布的剂量验证模块；连接剂量验证模块，用于将计算出的实际
+		<br/>剂量分布与本单分次4D放疗计划的计划剂量分布进行对比，根据对比结果确定
+		<br/>是否需要优化后续分次4D放疗计划的剂量对比模块；另外，还包括：根据所监
+		<br/>测的呼吸时相建立的呼吸预测数据库；所述呼吸时相预测模块根据所监测的患
+		<br/>者6当前呼吸时相，结合所建立的呼吸预测数据库确定患者6下一呼吸时相；
+		<br/>进一步地：所述输入模块、勾画模块、放疗计划模块、输出模块、剂量验证模
+		<br/>块和剂量对比模块集成于4D放疗计划系统5；所述呼吸时相预测模块、调用模
+		<br/>块、控制模块、判断模块、存储模块和呼吸曲线生成模块集成于4D放疗控制系
+		<br/>统4；所述剂量验证模块利用医疗X射线机各动作数据和患者6本单分次4D放
+		<br/>疗中的呼吸曲线图，得出每个射野中各呼吸时相的贡献剂量，进而计算出本单
+		<br/>分次放疗中患者6所接受的实际剂量分布；所述射野参数包括射野方向、射野
+		<br/>形状、射野权重、射野强度分布；所述输入模块输入的患者6不同呼吸时相的
+		<br/>4D医学图像由4D CT输出；所述医疗X射线机包括根据射野参数运动形成相应
+		<br/>射野的自动多叶准直器2和根据射野参数完成相应出束照射动作的加速器1；所
+		<br/>述放疗计划模块还连接所述剂量对比模块，用于当需要优化后续分次4D放疗计
+		<br/>划时设计新的4D放疗计划；所述4D放疗计划根据患者6实际采用的治疗方式，
+		<br/>可以以单次放疗计划或多个分次放疗计划进行实施，4D放疗计划中的总计划剂
+		<br/>量分布即为各时相合成计划剂量分布，当4D放疗计划以多个分次放疗计划进行
+		<br/>				实施时，各分次4D放疗计划的计划剂量分布即为各时相合成计划剂量分布/分
+		<br/>次数；所述放疗计划模块具体按照如下过程形成4D放疗计划：
+		<br/></p></td></tr><tr><td class="content" id="description_85"><p id="p0085" num="0085">ⅰ、设计所述靶区和危及器官的约束条件；所述约束条件包括靶区剂量目
+		<br/>标、危及器官限量要求等参数；
+		<br/></p></td></tr><tr><td class="content" id="description_86"><p id="p0086" num="0086">ⅱ、利用逆向计划优化方法形成4D放疗计划；
+		<br/></p></td></tr><tr><td class="content" id="description_87"><p id="p0087" num="0087">ⅲ、判断4D放疗计划中的总计划剂量分布是否符合临床要求，若不满足，
+		<br/>则修改逆向计划优化方法的优化条件重新形成4D放疗计划；
+		<br/></p></td></tr><tr><td class="content" id="description_88"><p id="p0088" num="0088">ⅳ、反复执行步骤ⅲ直至4D放疗计划中的总计划剂量分布符合临床要求。
+		<br/></p></td></tr><tr><td class="content" id="description_89"><p id="p0089" num="0089">本发明所述逆向计划优化方法可以一步到位完成所有时相计划的优化；也
+		<br/>可以先对某一时相进行优化，大致确定射野方向和形状后对其它所有射野进行
+		<br/>计划优化；在监测患者呼吸时相之后，可以根据需要进行多时相分割，进而得
+		<br/>到能够表征各个不同时相的呼吸状态特征的呼吸预测数据库；当对患者实施放
+		<br/>疗时，根据呼吸监测装置输出的患者实时呼吸状态特征，与该患者的呼吸预测
+		<br/>数据库进行匹配，依据患者的呼吸状态特征如周期、幅度和相位等，预测下一
+		<br/>时刻患者的呼吸时相；所述医疗X射线机包括根据射野参数运动形成相应射野
+		<br/>的自动多叶准直器和根据射野参数完成相应出束照射动作的加速器，当由前一
+		<br/>个射野变化至另一个射野的过程中，控制模块实时控制自动多叶准直器叶片的
+		<br/>运动速度，确保下一时相的射野形状匀速及时的渐变完成；所述医疗X射线机
+		<br/>各动作数据包括射野执行次序、射野变化速度、出束时间、出束量等；剂量验
+		<br/>证模块利用医疗X射线机各动作数据和患者呼吸曲线图计算本单分次放射治疗
+		<br/>中的患者接受的实际剂量分布，具体地，将医疗X射线机各动作数据如射野执
+		<br/>行次序、出束量等，与患者的实际呼吸曲线进行时间点匹配，进而得出各时刻
+		<br/>照射野与实际呼吸时相的匹配关系，计算出每个射野中各时相的贡献剂量，从
+		<br/>而计算出本单分次放射治疗中患者接受的实际剂量分布；放射治疗通常在治疗
+		<br/>周期内分多次进行照射治疗，从第一个分次治疗开始，每次治疗结束后都会把
+		<br/>本单分次4D放疗计划和患者实际剂量分布反馈给剂量对比模块确定后续分次放
+		<br/>疗计划是否需要调整(由医生或物理师根据患者实际剂量分布相对于本单分次
+		<br/>4D放疗计划的计划剂量分布的变化决定)。
+		<br/></p></td></tr><tr><td class="content" id="description_90"><p id="p0090" num="0090">本发明提供的一种带有呼吸补偿的4D放疗计划的实施方法及其设备，解决
+		<br/>了让患者在放疗计划设计时所用的时相进行憋气的现有方式所导致的延长治疗
+		<br/>时间以及适用范围窄的问题，提高了治疗效率，在治疗实施过程中充分考虑了
+		<br/>				患者呼吸运动对肿瘤位置和危及器官的位移影响，4D放疗计划能够随时跟随患
+		<br/>者呼吸运动而作适应性调整，达到精确四维放疗的目标，有效实现了最大限度
+		<br/>地将放射线集中照射到肿瘤，同时周围的正常组织及器官受到最小的剂量。
+		<br/></p></td></tr><tr><td class="content" id="description_91"><p id="p0091" num="0091">以上所述，仅为本发明较佳的具体实施方式，但本发明的保护范围并不局
+		<br/>限于此，任何熟悉本技术领域的技术人员在本发明揭露的技术范围内，根据本
+		<br/>发明的技术方案及其发明构思加以等同替换或改变，都应涵盖在本发明的保护
+		<br/>范围之内。
+		<br/></p></td></tr></table></div></body></html>

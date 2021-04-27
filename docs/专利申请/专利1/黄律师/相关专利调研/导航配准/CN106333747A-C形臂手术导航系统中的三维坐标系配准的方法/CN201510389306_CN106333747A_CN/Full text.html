@@ -1,0 +1,51 @@
+<html><head><title>全文文本(Fulltext)</title><meta http-equiv='Content-Type' content='text/html; charset=UTF-8'><style>div.fullText table {width: 100%;text-indent: 1px;} 
+ div.fullText table td.header {font-weight: bold;text-align: center;font-family: '宋体';font-size: 16px;line-height:20px;color: #000000;padding: 5px;}div.fullText table td.content {padding: 1px;text-align: left;vertical-align: top;width: 100%;font-family: '宋体';font-size: 14px;line-height:20px;color: #000000;}</style></head><body><?xml version="1.0" encoding="UTF-8"?><div xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:siposeas="java:com.neusoft.sipo.sipopublicsearch.search.app.view.detailUtils.xsltParser.XsltSeasParser" xmlns:str="http://example.com/namespace" xmlns:business="http://www.sipo.gov.cn/XMLSchema/business" xmlns:base="http://www.sipo.gov.cn/XMLSchema/base" xmlns:tbl="http://oasis-open.org/specs/soextblx" class="fullText"><table><tr><td id="claim_title" class="header">权利要求书</td></tr><tr><td class="content" id="claim_1"><business:ClaimText>1.C形臂手术导航系统中的三维坐标系配准的方法，其方法包括：
+</business:ClaimText></td></tr><tr><td class="content" id="claim_2"><business:ClaimText>     三维图像按照图像特点建立图像坐标系，按照物体方位及特征建立物体的世界坐标系；
+</business:ClaimText></td></tr><tr><td class="content" id="claim_3"><business:ClaimText>     三维图像中提取物体特征点集及其坐标，物体在世界坐标系的特征集点及其坐标通过外
+</business:ClaimText></td></tr><tr><td class="content" id="claim_4"><business:ClaimText>     接设备获得；
+</business:ClaimText></td></tr><tr><td class="content" id="claim_5"><business:ClaimText>     三维图像坐标系与世界坐标系统一坐标系的坐标轴方向；
+</business:ClaimText></td></tr><tr><td class="content" id="claim_6"><business:ClaimText>     通过迭代就近点算法计算三维图像坐标系到世界坐标系转化关系。
+</business:ClaimText></td></tr><tr><td class="content" id="claim_7"><business:ClaimText>2.如权利要求1所述的C形臂手术导航系统中的三维坐标系配准的方法，其特征在于，建立三维坐标系及坐标方法具体包括：运用等中心C形臂位置，结合实际物体建立世界坐标系及坐标；根据三维图像像素分布，按照像素的实际尺寸建立三维图像坐标系及坐标。
+</business:ClaimText></td></tr><tr><td class="content" id="claim_8"><business:ClaimText>3.如权利要求1所述的C形臂手术导航系统中的三维坐标系配准的方法，其特征在于，三维图像坐标系与世界坐标系统一坐标系的坐标轴方向方法具体包括：只能用绕三个坐标轴旋转90°或者-90°的方式旋转，经过多次旋转，将坐标系坐标轴方向统一。
+</business:ClaimText></td></tr><tr><td class="content" id="claim_9"><business:ClaimText>4.如权利要求1所述的C形臂手术导航系统中的三维坐标系配准的方法，其特征在于，迭代就近点算法计算坐标系间关系，其方法具体包括：两点集的点按照距离就近原则进行匹配；计算两个点集的重心位置坐标；运用矩阵的SVD分解和向量相差分别求解旋转矩阵和平移向量；以距离平方和之差绝对值作为迭代判断数值；计算并统计最终得到旋转参数与平移向量。
+</business:ClaimText></td></tr></table></div><div xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:siposeas="java:com.neusoft.sipo.sipopublicsearch.search.app.view.detailUtils.xsltParser.XsltSeasParser" xmlns:str="http://example.com/namespace" xmlns:business="http://www.sipo.gov.cn/XMLSchema/business" xmlns:base="http://www.sipo.gov.cn/XMLSchema/base" xmlns:tbl="http://oasis-open.org/specs/soextblx" class="fullText"><table style="table-layout:fixed"><tr><td id="description_title" class="header">
+						说明书
+					</td></tr><tr><td class="content" id="description_invention_title">C形臂手术导航系统中的三维坐标系配准的方法</td></tr><tr><td class="content" id="description_1">技术领域
+</td></tr><tr><td class="content" id="description_2">    本发明属于医疗器械技术领域，尤其涉及三维坐标系配准方法，具体涉及C形臂手术导航系统中三维坐标系配准的方法。
+</td></tr><tr><td class="content" id="description_3">背景技术
+</td></tr><tr><td class="content" id="description_4">配合移动三维C形臂的手术导航仪与三维图像结合，可以在术中辅助医生完成手术，但目前现状是图像获取设备与世界坐标系关系难以建立，手术导航设备根据图像特征与世界坐标系结合起来建立关系，而临床应用中难以确定图像特征的具体位置，这就造成了配准的不准确性。
+</td></tr><tr><td class="content" id="description_5">发明内容
+</td></tr><tr><td class="content" id="description_6">本发明的目的是：为解决移动三维C形臂的图像获取设备与世界坐标系关系难以建立，临床应用中难以确定图像特征的具体位置，而造成的配准的不准确性的缺陷，发明的一种C形臂手术导航系统中的三维坐标系配准的方法。
+</td></tr><tr><td class="content" id="description_7">本发明所采用的技术方案：其方法包括：
+</td></tr><tr><td class="content" id="description_8">     
+三维图像按照图像特点建立图像坐标系，按照物体方位及特征建立物体的世界坐标系；
+</td></tr><tr><td class="content" id="description_9">     
+三维图像中提取物体特征点集及其坐标，物体在世界坐标系的特征集点及其坐标通过外
+</td></tr><tr><td class="content" id="description_10">     
+接设备获得；三维图像坐标系与世界坐标系统一坐标系的坐标轴方向；通过迭代就近点算法计算三维图像坐标系到世界坐标系转化关系。
+</td></tr><tr><td class="content" id="description_11">建立三维坐标系及坐标方法具体包括：运用等中心C形臂位置，结合实际物体建立世界坐标系及坐标；根据三维图像像素分布，按照像素的实际尺寸建立三维图像坐标系及坐标。
+</td></tr><tr><td class="content" id="description_12">三维图像坐标系与世界坐标系统一坐标系的坐标轴方向方法具体包括：只能用绕三个坐标轴旋转90°或者-90°的方式旋转，经过多次旋转，将坐标系坐标轴方向统一。
+</td></tr><tr><td class="content" id="description_13">迭代就近点算法计算坐标系间关系，其方法具体包括：两点集的点按照距离就近原则进行匹配；计算两个点集的重心位置坐标；运用矩阵的SVD分解和向量相差分别求解旋转矩阵和平移向量；以距离平方和之差绝对值作为迭代判断数值；计算并统计最终得到旋转参数与平移向量。
+</td></tr><tr><td class="content" id="description_14">附图说明
+</td></tr><tr><td class="content" id="description_15">图1为本发明的流程图。
+</td></tr><tr><td class="content" id="description_16">图2为本发明的三维C形臂与世界坐标系。
+</td></tr><tr><td class="content" id="description_17">图3为本发明的统一世界坐标系与图像坐标系的坐标轴方向。
+</td></tr><tr><td class="content" id="description_18">图4为本发明的坐标系配准后的结果。
+</td></tr><tr><td class="content" id="description_19">具体实施方式
+</td></tr><tr><td class="content" id="description_20">参照附图，本发明实施提供了一种C形臂手术导航系统中三维坐标系配准的方法，该方法适用于三维C形臂三维图像坐标系和世界坐标系配准方法。
+</td></tr><tr><td class="content" id="description_21">该方法分为三个方面，第一个方面是建立三维图像坐标系和世界坐标系；第二个方面是坐标系统一方向；第三个方面是建立坐标系关系，方法流程见图1。
+</td></tr><tr><td class="content" id="description_22">建立三维坐标系及坐标方法具体包括：
+</td></tr><tr><td class="content" id="description_23">运用等中心C形臂位置，结合实际物体建立世界坐标系及坐标；见图2，等中心C形臂中心位置为坐标系原点，图中2表示物体与世界坐标系关系。物体坐标系定位采用C形臂红外定位灯标定，或者第三方硬件标定，第三方硬件如双目摄像机标定，机器标定。
+</td></tr><tr><td class="content" id="description_24">根据三维图像像素分布，按照像素的实际尺寸建立三维图像坐标系及坐标。
+</td></tr><tr><td class="content" id="description_25">三维图像坐标系与世界坐标系统一坐标系的坐标轴方向方法具体包括：只能用绕三个坐标轴旋转90°或者-90°的方式旋转，经过多次旋转，总会将坐标系坐标轴方向统一。图3a表示三维图像坐标系与世界坐标系方向统一以前图像坐标与世界坐标位置关系。图3b为统一后的坐标关系。
+</td></tr><tr><td class="content" id="description_26">通过迭代就近点算法计算三维图像坐标系到世界坐标系转化关系。
+</td></tr><tr><td class="content" id="description_27">具体步骤：
+</td></tr><tr><td class="content" id="description_28">根据图像点集imP中的点坐标，按照距离就近原则在世界坐标系下的点集搜索对应的点集wP；
+</td></tr><tr><td class="content" id="description_29">计算两个点集的重心位置坐标，应用坐标求和再求平均算出重心坐标imP_G，wP_G；
+</td></tr><tr><td class="content" id="description_30">点集imP元素与其重心imP_G相减得到点集imP_D，点集wP元素与其重心wP_G相减得到点集wP_D，点集imP_D元素转置乘以点集wP_D元素，得到矩阵集合后求和得到矩阵即H=∑imP_D’×wP_D，运用矩阵的SVD分解H求解旋转矩阵Rk；
+</td></tr><tr><td class="content" id="description_31">在旋转矩阵Rk被确定后，计算图像点集重心乘以Rk与世界坐标系下点集重心相差得到平移向量Tk即Tk=imP_G×Rk-wP_G；
+</td></tr><tr><td class="content" id="description_32">由点集imP计算旋转后的点集wP，通过imP与wP计算距离平方和，以连续两次距离平方和之差绝对值作为迭代判断数值；
+</td></tr><tr><td class="content" id="description_33">当连续两次距离平方和之差绝对值小于判断数值，则配准算法就停止迭代，否则重复以上步骤，直到满足条件后停止迭代；
+</td></tr><tr><td class="content" id="description_34">计算并统计旋转参数Rk与平移向量Tk，最终等待配准参数R、T。
+</td></tr><tr><td class="content" id="description_35">图4为坐标系配准后的结果。
+</td></tr></table></div></body></html>
